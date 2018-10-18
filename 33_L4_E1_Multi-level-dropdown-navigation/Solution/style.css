@@ -1,0 +1,23 @@
+@import url('reset.css');
+@import url('navigation.css');
+
+html{
+    font:16px/1.5 "Helvetica",sans-serif;
+}
+
+body{
+    background:rgb(238, 238, 238);
+    padding:2rem;
+}
+header {
+    border-bottom:2px solid #CCC;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.site-title {
+    font-size:3rem;
+    padding:0;
+}
+
+

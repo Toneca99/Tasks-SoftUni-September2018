@@ -1,0 +1,41 @@
+html{
+    font:16px/1.5 "Helvetica",sans-serif;
+}
+body{
+    background:rgb(238, 238, 238);
+    padding:5%;
+}
+
+h1,h2,h3,h4,h5{
+    margin:1rem 0 1rem 0;
+    padding:0;
+}
+.site-title{
+    font-size:2em;
+    margin-bottom:0; 
+}
+section img{
+    float:right;
+    background:rgb(230, 213, 213);
+    box-shadow:0 0 2rem 0 rgba(0, 0, 0, 0.25);
+}
+
+blockquote {
+    border-left:3px solid #DDD;
+    padding:2rem;
+    max-width:40%;
+    float:right;
+    font-style: italic;
+    
+}
+
+.author{text-align: right;}
+
+.leftimg{
+    float:left;
+    margin-right:0.5rem;
+    margin-bottom:0.5rem;
+    border:2px solid rgb(107, 102, 102);
+    padding:0.5rem;
+    
+}

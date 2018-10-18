@@ -1,0 +1,93 @@
+html {
+    font: 16px/1.5 Helvetica,sans-serif;
+}
+
+body{padding:5em;}
+body section{
+   
+    padding:1.5rem 0 1.5rem 0;
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin:1rem 0 1em 0;
+    padding:0;
+    font:1em/1.2 Georgia,serif;
+}
+
+h1{font-size:2.2rem}
+h2{font-size:2.0rem}
+h3{font-size:1.8rem}
+h4{font-size:1.6rem}
+h5{font-size:1.4rem}
+h6{font-size:1.2rem}
+
+p{
+    margin:0;
+    padding-bottom:1.5rem;
+   
+}
+ul , ol , dl {
+    margin:0 0 1.5rem 0;
+}
+
+ul ul{
+    margin-top:0.5rem;
+    margin-bottom:0;}
+ul li{list-style-type: square;}
+ul ul li{list-style-type: disc;}
+ul ul ul li{list-style-type: circle;}
+
+a{
+    text-decoration:none;
+    color: rgb(6, 145, 80);
+    padding:1.2rem;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom:1.5rem;
+    border:1px solid #DDD;
+    border-collapse:collapse;
+}
+
+table th ,table td{
+    border:1px solid #DDD;
+    padding:0.3rem;
+}
+
+table tr:nth-child(even) td{background:#DDD;}
+
+table thead th{
+    text-align:left;
+    background:#CCC;
+}
+
+table tr:hover td{background:#000; color:#FFF;}
+a:hover{
+    background:rgb(214, 175, 47);
+    color:rgb(44, 19, 19);
+   
+}
+blockquote{
+    font-style:italic;
+    border-left:3px solid rgb(221,221,221);
+    margin:0 0 1.5rem 2rem;
+    padding:1rem 2rem;
+}
+
+blockquote .author {text-align:right;}
+section>footer{
+    background:#FFF;
+}
+article footer:last-child{
+    color:rgba(0, 0, 0, 0.521);
+    margin-top:0;
+    padding-top:1rem;
+    background:rgba(169, 216, 240, 0.582);
+    text-align:center;
+    
+}
+
+footer>p{ margin-top:0.5rem;}

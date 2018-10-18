@@ -1,0 +1,48 @@
+html{
+    font:16px/1.2 "Helvetica",sans-serif;
+}
+
+body{padding:5%;}
+h1,h2,h3,h4,h5,h6{
+    font:1em/1.2 "Georgia",sans-serif;
+    margin-bottom:0;
+}
+
+h1{font-size:2.2rem}
+h2{font-size:2.0rem}
+h3{font-size:1.8rem}
+h4{font-size:1.6rem}
+h5{font-size:1.4rem}
+h6{font-size:1.2rem}
+
+header{
+    border-bottom:1px solid #000;
+}
+
+header p {
+    font-size:3em;
+    margin:0;
+    display:inline-block;
+}
+header nav {
+    display:inline-block;
+}
+
+header nav ul{
+    list-style-type:none;
+    margin-top:0;
+    margin-left:2rem;
+    
+}
+
+ul li {
+    float:left;
+    padding:1rem;
+    
+}
+
+ul a{
+    color:rgb(69, 228, 69);
+    text-decoration: none;
+}
+.navigation { clear:left;}

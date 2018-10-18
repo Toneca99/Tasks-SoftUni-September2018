@@ -1,0 +1,27 @@
+body{
+    background:#EEE;
+    padding:2rem;
+}
+
+.gallery{
+    display:flex;
+    justify-content:center;
+    
+
+}
+
+ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    flex-basis:80%;
+}
+
+ul li{
+    display:flex;
+    margin:1rem;
+    border:5px solid black;
+    padding:1rem;
+    align-items:center;
+}

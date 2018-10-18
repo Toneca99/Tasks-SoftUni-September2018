@@ -1,0 +1,17 @@
+html{
+    font:16px/1.5 "Helvetica",sans-serif;
+}
+
+body{
+    background:rgb(238, 238, 238);
+    display:flex;
+}
+
+.container{
+    
+}
+
+.media img{
+    width:20%;
+    display:inline-block;
+}

@@ -1,0 +1,79 @@
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+@import url('../../33_L4_E1_Multi-level-dropdown-navigation/Solution/reset.css');
+
+body{
+    padding:2rem;
+}
+
+
+
+fieldset , legend {
+    background: #FFF;
+    border:1px solid black;
+}
+fieldset{
+    position:relative;
+    padding: 2rem;
+    width:20%;
+    
+}
+
+
+
+
+fieldset legend{
+    display:block;
+    position: absolute;
+    border-radius: 0.2rem;
+    padding:0.3rem 1.2rem;
+    top:-1rem;
+    left:-1px;
+}
+
+form label {
+    display:block;
+    margin:0.5rem;
+}
+
+.input {
+    display: flex;
+    position: relative;
+    padding:0.4rem;
+    align-items: center;
+}
+
+.input input {
+    order:1;
+    border:none;
+    position: relative;
+    z-index: 3;
+    outline: none;
+    padding-left:0.3rem;
+    background:none;
+    flex:1 0 auto;
+}
+
+.input .fas {
+    
+    order:0;
+    position: relative;
+    z-index: 2;
+}
+
+.input .actions{
+    border:2px solid #DDD;
+    position: absolute;
+    border-radius:0.3rem;;
+    top:0; left:0; bottom:0; right:0;
+    z-index:1;
+}
+
+.input input:focus + .actions{
+    color: #090;
+    border-color: #090;
+}
+
+.input input:focus + .actions + .fas {
+    color: #090;
+
+}

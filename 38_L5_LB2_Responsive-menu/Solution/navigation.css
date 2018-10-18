@@ -1,0 +1,138 @@
+nav.main {
+    display:flex;
+    
+}
+
+nav.main ul{
+  
+    list-style-type:none;
+    background:rgb(255, 255, 255);
+    border-radius:3px;
+}
+
+nav.main > ul{
+    display:flex;
+    padding:1rem;
+   
+}
+
+nav.main ul ul{
+    pointer-events: none;
+    opacity:0;
+    width:12rem;
+    position:absolute;
+    margin-top:0.5rem;
+    transition: opacity 0.2s ease-out , transform 0.1s ease-in;
+    transform:translateY(2rem);
+}
+
+nav.main > ul > li > ul  {
+    top:100%;
+    left:-0.5rem;
+}
+
+nav.main > ul > li > ul > li > ul  {
+    top: -0.5rem;
+    left:inherit;
+    right:100%;
+}
+
+nav.main li {
+    display:block;
+    position:relative;
+}
+nav.main a{
+    text-decoration:none;
+    display:block;
+    background:rgb(51, 51, 51);
+    color:#FFF;
+    border-radius:3px;;
+    padding:0.5rem;
+}
+nav.main li:hover > a,
+nav.main a:hover{
+   
+    background:rgb(1, 156, 0);
+    color:#FFF;
+    border-radius:0.3px;
+}
+
+nav.main > ul > li:not(:last-child){
+    padding-right:0.7rem;
+}
+
+nav.main > ul ul  li:not(:last-child){
+    padding-bottom:0.5rem;
+}
+
+
+input{
+    display:hidden;
+
+}
+
+
+#toggle,
+#main-nav-toggle {
+    display:none;
+    
+}
+
+@media screen and (max-width:800px){
+
+    #toggle{
+        display:block;
+    }
+
+    nav.main {
+        display:none;
+    }
+
+    nav.main > ul {
+        display:block;
+    }
+
+    nav.main ul ul {
+        opacity:1;
+        pointer-events:inherit;
+        width:auto;
+        position:static;
+        transform: translate(0,0) ;
+        padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    }
+
+    nav.main ul > li > ul a {
+        background: rgb(80, 80, 80);
+        color:#FFF;
+    }
+
+    nav.main ul > li > ul > li > ul a {
+        background: rgb(160 , 160 ,160 );
+        color:#FFF;
+    }
+
+
+    nav.main > ul > li:not(:last-child){
+        padding:0 0 0.5rem 0;
+    }
+    #main-nav-toggle:checked + header nav.main {
+        display: block;
+        flex:1 0 100%;
+
+    }
+    
+}
+
+
+@media screen and (min-width:800px){
+    #toggle {
+        display: none;
+    }
+
+    
+    nav.main li:hover > ul {
+        opacity:1;
+        pointer-events: inherit;
+        transform: translateY(0);
+}
+}

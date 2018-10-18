@@ -1,0 +1,128 @@
+@import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
+@import url('../../IMPORTS/reset.css');
+@import url('../../IMPORTS/typography.css');
+
+
+
+body{
+background:#FFF;
+padding:2rem;
+display: flex;
+justify-content: center;
+align-items:center;
+height:100vh;
+}
+
+form{
+width:40%;
+}
+
+fieldset,
+fieldset legend {
+    background:rgb(248, 248, 248);
+    border:1px solid rgb(160, 160, 160);
+    border-radius:0.4rem;
+    box-shadow: 0 0 3px rgb(99, 99, 99);
+    
+}
+
+
+
+fieldset{
+    display:block;
+    display:flex;
+    position: relative;
+    padding:5rem;
+}
+
+fieldset legend{
+    position: absolute;
+    top:-1.5rem;
+    left:-0.15rem;
+    padding:0.1rem 10rem 0.1rem 2rem;
+    
+}
+form label{
+    display:block;
+}
+.field{
+    display: flex;
+    align-items: center;
+}
+
+.field > label {
+    flex:0 0 8rem;
+    padding-right:0.6rem;
+    text-align:right;
+}
+
+.input{
+    display:flex;
+    position:relative;
+    align-items: center;
+    flex:1 0 auto;
+    
+}
+.input input{
+    order:2 ;
+    border:none;
+    flex:1 0 auto;
+    outline:none;
+    padding:0.3rem 0.6rem;
+    padding-left:0;
+    position:relative;
+    z-index:3;
+    background:none;
+}
+.input .fas{
+    order:1;
+    position:relative;
+    z-index:2;
+    padding:0.5rem 0.7rem;
+    
+}
+
+.input .actions {
+    
+    border:1px solid #CCC;
+    position: absolute;
+    top:0; bottom:0; left:0; right:0;
+    z-index:1;
+    border-radius:0.5rem;
+    
+}
+
+.input input:focus + .actions  {
+    border:2px solid #090;
+}
+    
+.input input:focus + .actions + .fas {
+    color:#090;
+    
+}
+
+#submit{
+    font-size:1.2rem;
+    padding:0.4rem 1.2rem;
+    background: rgb(45, 45, 45);
+    color:#FFF;
+    outline:none;
+    border:none;
+    font-weight: bold;
+    border-radius:0.2rem;
+}
+#submit:active{color: red;}
+
+
+@media screen and (max-width:800px)
+
+{
+    .field{
+        display:block;
+    }
+
+    .field > label {
+        width:100%;
+        text-align:left;
+    }
+}

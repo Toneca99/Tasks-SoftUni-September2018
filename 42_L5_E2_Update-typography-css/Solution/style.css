@@ -1,0 +1,11 @@
+@import url('typography.css');
+
+body{
+    background: #ECC;
+    padding:2rem;
+}
+
+header {
+    border-bottom:2px solid black;
+}
+

@@ -1,0 +1,75 @@
+body{
+    background:rgb(238, 238, 238);
+    font-size:16px;
+    line-height: 1.5;
+}
+h2,h3{
+    font:1em/1.2 "Georgia", sans-serif;
+}
+
+.card{
+    background:rgb(255, 255, 255);
+    border-radius:o.3rem;
+    overflow:hidden;
+    width:28%;
+    box-shadow:0 0 0.2rem 0 rgba(0 ,0 ,0 ,0.2);
+    float:left;
+    margin:2rem;
+}
+
+
+
+.card .media{
+    position:relative;
+    overflow:hidden;
+ 
+}
+
+.card .media::after{
+    display:block;
+    content: '';
+    padding-top:56.25%;
+}
+
+
+.card .media img{
+    display: block;
+    position:absolute;
+    left:0;right:0;
+    width: 100%;
+    height:auto;
+}
+
+
+
+.card .description {
+    padding: 2rem;
+    overflow:hidden;
+}
+
+.card .description h2{
+    margin:0 0 0.4rem 0;
+    font-weight:bold;
+}
+
+.card .description p{
+    margin:0;
+    padding:0;
+
+}
+
+.card .description a.button{
+    display:block;
+    text-decoration:none;
+    float:right;
+    background:rgb(0, 153, 0);
+    padding:0.5rem 1rem;
+    border-radius:0.2rem;
+    color:white;
+}
+
+.card .description a.button:hover{
+    background:black;
+    color:#FFF;
+    
+}

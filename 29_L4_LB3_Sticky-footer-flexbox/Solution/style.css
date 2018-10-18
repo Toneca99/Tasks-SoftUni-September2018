@@ -1,0 +1,56 @@
+html{
+    font:16px/1.5 "Helvetica",sans-serif;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    margin:0;
+    min-height:100vw;
+    flex-wrap:wrap;
+    
+}
+
+header{
+    border-bottom:2px solid rgb(0, 0, 0);
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+footer{
+    color:rgb(255, 255, 255);
+    background:rgb(102, 102, 102);
+    padding:1rem;
+    margin-top:auto;
+}
+
+header p{
+    font-size:3rem;
+    text-transform:uppercase;
+}
+header p a{
+    color:#000;
+    text-decoration: none;
+
+}
+
+header nav ul{
+    padding:0;
+}
+header ul{
+    display:flex;
+    margin:0;
+    list-style-type:none;
+}
+
+header ul li{
+    padding:1rem;
+}
+
+
+header nav a {
+    color:rgb(0, 153, 0);
+    text-decoration: none;
+    
+}

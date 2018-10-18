@@ -1,0 +1,50 @@
+body{
+    background:rgb(238, 238, 238);
+    text-transform: uppercase;
+    padding:2rem;
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+header , main , aside , footer {
+    background:rgb(255, 255, 255);
+    margin:1rem;
+    padding:1rem;
+    border-radius:10px;
+    box-shadow: 0 0 15px #CCC;
+
+}
+
+header{
+    height:5rem;
+    
+}
+
+main{
+    height:15rem;
+    flex-basis:70%;
+}
+
+
+aside{
+   
+    height:15rem;
+    flex-basis:30%;
+
+}
+
+
+footer{
+    
+    height:5rem;
+    
+}
+
+.container {
+
+    display:flex;
+    flex-direction:row;
+   
+}

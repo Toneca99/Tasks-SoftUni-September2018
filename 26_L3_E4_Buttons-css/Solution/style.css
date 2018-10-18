@@ -1,0 +1,34 @@
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+
+body{
+    padding:2rem;
+    font:16px/1.5 "Helvetica",sans-serif;
+}
+
+button{
+    border:none;
+    background:none;
+    outline-style:none;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    border-radius:20px;
+    margin:5px;
+    padding:8px 15px;
+    outline-style:none;
+}
+
+.normal { border:1.5px solid black; color:black;}
+.normal:hover,.normal:focus{ border-color:rgb(1, 101, 1);color: rgb(1, 101, 1); cursor: pointer;}
+
+.filled{ background:rgb(51, 51, 51);color:#FFF;}
+.filled:hover,.filled:focus{background:rgb(1, 101, 1); cursor: pointer; }
+
+.icon{ color:#FFF; background:rgb(51, 51, 51);}
+.icon:hover, .icon:focus{ background:rgb(1, 101, 1);cursor: pointer; }
+
+i{ 
+    margin-right:7px;
+    font-size:12px;
+}

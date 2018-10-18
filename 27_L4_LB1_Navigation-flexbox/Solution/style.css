@@ -1,0 +1,43 @@
+html{
+    font:16px/1.5 "Helvetica",sans-serif;
+}
+
+header{
+    border-bottom:2px solid rgb(0, 0, 0);
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+header p{
+    font-size:3rem;
+    text-transform:uppercase;
+}
+header p a{
+    color:#000;
+    text-decoration: none;
+
+}
+
+header nav{
+    
+}
+header nav ul{
+    padding:0;
+}
+header ul{
+    display:flex;
+    margin:0;
+    list-style-type:none;
+}
+
+header ul li{
+    padding:1rem;
+}
+
+
+header nav a {
+    color:rgb(0, 153, 0);
+    text-decoration: none;
+    
+}

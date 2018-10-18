@@ -1,0 +1,171 @@
+nav.main {
+    display:flex;
+    margin-top:1rem;
+    
+}
+
+nav.main ul{
+  
+    list-style-type:none;
+    border-radius:3px;
+    
+}
+
+nav.main > ul{
+    display:flex;
+    margin:0;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.main ul ul{
+    pointer-events: none;
+    opacity:0;
+    width:12rem;
+    position:absolute;
+    margin-top:0.5rem;
+    transition: opacity 0.2s ease-out , transform 0.1s ease-in;
+    transform:translateY(2rem);
+}
+
+nav.main > ul > li > ul  {
+    top:100%;
+    left:-0.5rem;
+}
+
+nav.main > ul > li > ul > li > ul  {
+    top: -0.5rem;
+    left:inherit;
+    right:100%;
+}
+
+nav.main li {
+    display:block;
+    position:relative;
+    
+}
+
+nav.main li a {
+    display:block;
+    text-align:center;
+    
+}
+nav.main a{
+    text-decoration:none;
+    display:block;
+    border: solid transparent;
+    border-width:2px 0;
+    color:#000;
+    border-radius:0.1rem;
+    padding:0.5rem 1rem;
+}
+nav.main li:hover > a,
+nav.main a:hover{
+    border-color:purple;
+    border-radius:0.3rem;
+    color:purple;
+}
+
+nav.main > ul > li:not(:last-child){
+    padding-right:0.7rem;
+}
+
+nav.main > ul ul  li:not(:last-child){
+    padding-bottom:0.5rem;
+}
+
+
+input{
+    display:hidden;
+
+}
+
+
+
+#toggle {
+    position: relative;
+    flex:0 0 auto;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+#toggle,
+#main-nav-toggle {
+    display:none;
+    
+}
+#toggle.fas {
+    display:inline-block;
+    margin-right:0.5rem;
+
+}
+#toggle .fas.fa-times {
+    display:none;
+}
+
+@media screen and (max-width:800px){
+
+    #toggle{
+        display:block;
+    }
+
+    nav.main {
+        display:none;
+    }
+
+    nav.main > ul {
+        display:block;
+    }
+
+    nav.main ul ul {
+        opacity:1;
+        pointer-events:inherit;
+        width:auto;
+        position:static;
+        transform: translate(0,0) ;
+        padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    }
+
+    nav.main ul > li > ul a {
+        background: rgb(80, 80, 80);
+        color:#FFF;
+    }
+
+    nav.main ul > li > ul > li > ul a {
+        background: rgb(160 , 160 ,160 );
+        color:#FFF;
+    }
+
+
+    nav.main > ul > li:not(:last-child){
+        padding:0 0 0.5rem 0;
+    }
+    #main-nav-toggle:checked + header nav.main {
+        display: block;
+        flex:1 0 100%;
+
+    }
+
+    #main-nav-toggle:checked + header #toggle .fa-times {
+        display: inline-block;
+    }
+    
+    #main-nav-toggle:checked + header #toggle .fa-bars {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:800px){
+    #toggle {
+        display: none;
+    }
+
+    
+    nav.main li:hover > ul {
+        opacity:1;
+        pointer-events: inherit;
+        transform: translateY(0);
+}
+}

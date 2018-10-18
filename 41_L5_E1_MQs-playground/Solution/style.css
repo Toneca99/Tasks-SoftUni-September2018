@@ -1,0 +1,40 @@
+body {
+    background: #EEC;
+}
+p {
+    display:inline-block;
+    font-weight:bold;
+}
+
+span {
+    display:none;
+}
+@media screen and (min-width: 600px) {
+.mqwidth {
+    display:inline-block;
+}
+}
+
+@media screen and (min-height: 600px) {
+    .mqheight {
+        display:block;
+
+}
+
+}
+
+@media screen and (min-height :600px) {
+    .mqheight {
+        display:inline-block;
+
+}
+
+}
+
+@media screen and (min-aspect-ratio:8/5) {
+    .mqaspect {
+        display:inline-block;
+
+}
+
+}
