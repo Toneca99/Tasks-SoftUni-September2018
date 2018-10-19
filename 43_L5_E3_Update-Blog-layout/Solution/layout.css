@@ -1,0 +1,54 @@
+.site-title{ 
+    margin: 0 0 1rem 0;
+    padding: 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.align_right {
+    float:right;
+    padding:0 0 1rem 1rem;
+}
+
+.align_left {
+    float:left;
+    padding:0 1rem 1rem 0;
+}
+
+
+
+@media screen and (min-width:800px) {
+
+    
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+    main{flex-basis:70%}
+    aside {
+    margin-left:2rem;
+    flex-basis:30% ;
+}
+    
+}
+
+@media screen and (max-width:800px) {
+    aside{
+        display:flex;
+        justify-content: space-evenly;
+    }
+    
+    .categories{
+        margin:2em;
+    }
+    
+}
+
+
+aside{justify-content: center;}
+
+
+.author {
+    text-align:right;
+}

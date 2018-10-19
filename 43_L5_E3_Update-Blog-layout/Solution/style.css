@@ -1,5 +1,8 @@
+@import url('../../IMPORTS/typography.css');
 @import url('navigation.css');
 @import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
+@import url('../../IMPORTS/reset.css');
+@import url('layout.css');
 
 html{
     font: 12px/1.5 "Helvetica",sans-serif;
@@ -8,65 +11,30 @@ html{
 
 body {
     background: rgb(255, 255, 255);
-    padding: 1rem;
-}
-@media screen and (min-width:500px) {
+    padding: 5rem;
     
-    body{
-        font-size:1.2rem;
-        
-    }
-    }
-
-
-@media screen and (min-width:800px) { 
-    body{font-size:1.4rem}
-    main { flex-basis: 80rem;}
-    aside { flex-basis: 20rem; margin-left:2rem;}
 }
-@media screen and (min-width:1300px) { 
-    body{font-size:1.6rem}
-    main { flex-basis: 80rem;}
-    aside { flex-basis: 20rem; margin-left:2rem;}
-}
+
 
 body  #header-nav-toggle {
     display:none;
 }
 
-.content {
-    display: flex;
-}
+
+
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center; 
     border-bottom: 1px solid black;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+    
 }
 
-.site-title{ 
-    margin: 0 0 1rem 0;
-    padding: 0;
-    font-size: 3rem;
-    text-transform: uppercase;
-}
 
-.align_right {
-    float:right;
-    padding:0 0 1rem 1rem;
-}
 
-.align_left {
-    float:left;
-    padding:0 1rem 1rem 0;
-}
-.content {
-    justify-content: center;
-
-}
-
-aside a {text-decoration:none; color:rgb(4, 185, 4);}
+aside a {text-decoration:none; color:rgb(4, 185, 4); }
 aside a:hover{text-decoration: underline; }
 
 blockquote {
@@ -76,6 +44,4 @@ blockquote {
     width:40%;
 }
 
-.author {
-    text-align:right;
-}
+
